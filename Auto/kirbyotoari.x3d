@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"
+"http://www.web3d.org/specifications/x3d-3.2.dtd">
+
+
+<X3D profile='Immersive'>
+  <head>
+    <meta name='filename' content='kirbyotoari.x3d'/>
+  </head>
+
+<Scene>
+  <Background skyColor="0 1 1" />
+
+<Sound intensity="1" location="0 0 0" direction="0 0 1"
+         minFront="0.5" minBack="0.5" maxFront="10" maxBack="10">
+
+
+  <AudioClip loop="true" url='"suoto.wav"'/>
+</Sound>
+
+
+
+
+
+
+  <!-- body -->
+  <Transform translation="0.0 0.0 0.0">
+   <Shape>
+    <Sphere radius="0.75"/>
+    <Appearance>
+     <Material  emissiveColor='0.75 0.4 0.45'/>
+    </Appearance>
+   </Shape>
+  </Transform>
+
+<!-- eyes -->
+<Transform translation="0 0 -0.1" scale="1.1 1.1 1.1">
+<Transform translation="0.15 0.2 0.76" scale="0.2 0.6 0.01">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 0 0 0 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+<Transform translation="0.15 0.27 0.77" scale="0.17 0.2 0.01">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 1 1 1 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+<Transform translation="0.15 0.13 0.77" scale="0.17 0.2 0.001">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 0 0 1 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+
+<Transform translation="-0.3 0 0">
+<Transform translation="0.15 0.2 0.76" scale="0.2 0.6 0.01">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 0 0 0 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+<Transform translation="0.15 0.27 0.77" scale="0.17 0.2 0.01">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 1 1 1 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+<Transform translation="0.15 0.13 0.77" scale="0.17 0.2 0.001">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 0 0 1 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+</Transform>
+</Transform>
+
+<!-- cheeks -->
+<Transform translation="0.3 0 0.76" scale="0.3 0.2 0.01">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 1 0.41 0.7 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+<Transform translation="-0.3 0 0.76" scale="0.3 0.2 0.01">
+  <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+      <Material diffuseColor = ' 1 0.41 0.7 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+
+
+
+<!-- mouth -->
+<Transform translation="-0.08 -0.05 0.75">
+<Shape>
+  <IndexedFaceSet coordIndex = '0 1 2 -1
+                                '
+                                solid='false'>
+    <Coordinate point = '
+    0.0 0 0
+    0.15 0 0
+    0.075 -0.13 0
+    '/>
+  </IndexedFaceSet>
+  <Appearance>
+    <Material diffuseColor = ' 0.2 0.2 0.2 ' />
+  </Appearance>
+</Shape>
+</Transform>
+
+<Transform translation="-0.04 -0.09 0.76">
+<Shape>
+  <IndexedFaceSet coordIndex = '0 1 2 -1
+                                '
+                                solid='false'>
+    <Coordinate point = '
+    0.0 0 0
+    0.075 0 0
+    0.0375 -0.065 0
+    '/>
+  </IndexedFaceSet>
+  <Appearance>
+    <Material diffuseColor = ' 1 0.5 0.5 ' />
+  </Appearance>
+</Shape>
+</Transform>
+
+
+
+  <!-- LeftHand-->
+  <Transform translation="0.75 0.0 0.0">
+   <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+     <Material  emissiveColor='0.75 0.4 0.45'/>
+
+    </Appearance>
+   </Shape>
+  </Transform>
+
+  <!-- RighttHand-->
+  <Transform translation="-0.75 0.2 0.0">
+   <Shape>
+    <Sphere radius="0.25"/>
+    <Appearance>
+     <Material  emissiveColor='0.75 0.4 0.45'/>
+
+    </Appearance>
+   </Shape>
+  </Transform>
+
+
+
+  <!-- FootCover -->
+  <Transform translation="0 -0.75 0">
+  <Shape>
+    <IndexedFaceSet coordIndex = '0 1 2 -1
+                                  2 3 0 -1
+                                  '
+                                  solid='true'>
+      <Coordinate point = '
+      -10 0 -10
+      -10 0 10
+       10 0 10
+       10 0 -10
+      '/>
+    </IndexedFaceSet>
+    <Appearance>
+      <Material emissiveColor='0 1 1' />
+    </Appearance>
+  </Shape>
+  </Transform>
+
+  <!-- LeftFoot -->
+  <Transform translation="0.4 -0.75 0.4" scale="0.2 0.2 0.5">
+    <Shape>
+      <Sphere radius="1"/>
+      <Appearance>
+        <Material diffuseColor = ' 1 0.2 0.2 ' />
+      </Appearance>
+    </Shape>
+  </Transform>
+<!-- RightFoot -->
+<Transform translation="-0.4 -0.75 0.4" scale="0.2 0.2 0.5">
+  <Shape>
+    <Sphere radius="1"/>
+    <Appearance>
+      <Material diffuseColor = ' 1 0.2 0.2 ' />
+    </Appearance>
+  </Shape>
+</Transform>
+</Scene>
+</X3D>
